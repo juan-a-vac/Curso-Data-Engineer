@@ -3,7 +3,7 @@ import requests
 import json
 
 #requests
-url = 'https://www.frankfurter.app/currencies'
+url = 'https://www.frankfurter.app/latest'
 r = requests.get(url)
 j = r.json()
 print(j)
