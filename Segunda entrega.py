@@ -23,7 +23,3 @@ df2 = pd.DataFrame(data)
 df_new = df2.reset_index(drop=True)
 #concatenamos ambos df
 df_final = pd.concat([df2, df1], axis=1)
-
-print("las filas del df_final son:  ",df_final.shape)
-print(df_final)
-print(df_final.columns)
