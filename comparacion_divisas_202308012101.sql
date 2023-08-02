@@ -1,0 +1,2 @@
+INSERT INTO juan_a_vaca_11_coderhouse.comparacion_divisas (amount,base,"date",aud,bgn,brl,cad,chf,cny,czk,dkk,gbp,hkd,huf,idr,ils,inr,isk,jpy,krw,mxn,myr,nok,nzd,php,pln,ron,sek,sgd,thb,try,usd,zar) VALUES
+	 (1.0,'EUR','2023-08-01',1.6557,1.9558,5.2148,1.4569,0.961,7.862,23.951,7.4518,0.85865,8.5508,389.25,16587.0,4.0002,90.26,144.3,156.85,1413.56,18.4278,4.9568,11.211,1.7834,60.181,4.4303,4.9319,11.6496,1.4641,37.578,29.581,1.097,19.8749);
