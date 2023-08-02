@@ -36,7 +36,7 @@ df2 = pd.DataFrame(data)
 df_new = df2.reset_index(drop=True)
 #concatenamos ambos df
 df_final = pd.concat([df2, df1], axis=1)
-df_final.to_sql('comparacion_divisas', engine, if_exists='replace', index=False)
+df_final.to_sql('comparacion_divisas', engine, if_exists='append', index=False)
 df_a = pd.read_sql_table('comparacion_divisas',engine)
 
 
