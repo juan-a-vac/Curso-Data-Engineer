@@ -4,7 +4,6 @@ import json
 import pandas as pd
 from sqlalchemy import create_engine
 import psycopg2
-
 import sqlalchemy
 from sqlalchemy.engine.url import URL
 
@@ -36,8 +35,10 @@ df2 = pd.DataFrame(data)
 df_new = df2.reset_index(drop=True)
 #concatenamos ambos df
 df_final = pd.concat([df2, df1], axis=1)
+df_final['date'] = pd.to_datetime(df_final['date'])
+
+#agregamos los datos a la tabla de redshift
 df_final.to_sql('comparacion_divisas', engine, if_exists='append', index=False)
 df_a = pd.read_sql_table('comparacion_divisas',engine)
-
 
 
