@@ -1,5 +1,5 @@
 #info tomada de https://www.frankfurter.app/
-
+#
 import requests
 import json
 import pandas as pd
